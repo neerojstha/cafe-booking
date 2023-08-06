@@ -7,5 +7,13 @@ class BookingForm(forms.ModelForm):
         fields = ['name', 'email', 'date', 'time', 'number_of_people', 'comments']
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
-            'time': forms.TimeInput(attrs={'type': 'time', 'min': '08:00', 'max': '18:00', 'pattern': '^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$'}),
+            'time': forms.TimeInput(attrs={'type': 'time'}),
         }
+
+    def clean_time(self):
+        time = self.cleaned_data['time']
+
+        if time.hour < 8 or time.hour >= 18:
+            raise forms.ValidationError("Booking time should be between 8 am and 6 pm.")
+
+        return time
