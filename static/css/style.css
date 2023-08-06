@@ -1,0 +1,225 @@
+body {
+    background-color: #F9FAFC;
+}
+
+.brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.red-o {
+    color: #E84610;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.main-bg {
+    background-color: #F9FAFC;
+}
+
+
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #23BBBB;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #445261;
+    color: white;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover,
+.page-link {
+    color: #E84610;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+.btn-signup {
+    background-color: #23BBBB;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+.hero-image {
+    background-image: url(https://img01.aws.kooomo-cloud.com/upload/637/cms/708307/en/42930/Rathmines-Inside.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+.container {
+    padding: 20px;
+  }
+  
+  .coffee-item {
+    margin-bottom: 20px;
+  }
+  
+  .coffee-item img {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .coffee-item h4 {
+    margin-top: 10px;
+    font-weight: bold;
+  }  
+
+  .cafe-image {
+    max-width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  
+  .appointment-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .logo-image {
+    height: 75%; /* Adjust the height as needed */
+    width: 125px; /* Preserve the aspect ratio */
+    margin-right: 10px; /* Add some spacing to the right */
+}
+
+/* CSS animation keyframes for fade-in effect */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation and styles to the "Welcome to Cafe Soul" words */
+.welcome-animation {
+    animation: fade-in 2s ease-in-out; /* Adjust the duration and timing function as needed */
+    color: #eb0fa2; /* Change this color to a coffee color you prefer */
+    font-size: 32px; /* Adjust the font size as needed */
+}
+
+/* Apply pink color to social media icons */
+.navbar .fab {
+    color: rgb(196, 29, 182); /* Change this color to the desired pink shade */
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
