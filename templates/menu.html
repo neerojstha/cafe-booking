@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Our Menu
+{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1>Our Menu</h1>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            {% if items %}
+                <ul class="list-group">
+                    {% for item in items %}
+                        <li class="list-group-item">
+                            <h4>{{ item.name }}</h4>
+                            <p>{{ item.description }}</p>
+                            <p>Price: {{ item.price }}</p>
+                        </li>
+                    {% empty %}
+                        <li class="list-group-item">No items available.</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No items available.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

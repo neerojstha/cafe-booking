@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <h1 class="text-center">Book Appointment</h1>
+            <form method="post" class="my-4 appointment-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary btn-block mt-3">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
