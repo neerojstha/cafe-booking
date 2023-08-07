@@ -156,7 +156,7 @@ body {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 250%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -223,3 +223,4 @@ body {
 .navbar-nav .nav-link {
     text-transform: uppercase;
 }
+

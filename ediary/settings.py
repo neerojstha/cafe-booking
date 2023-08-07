@@ -31,7 +31,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-neerojstha-cafebooking-xjk9r5g6e3x.ws-eu102.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['cafe-booking-4d8e2d880209.herokuapp.com', 'localhost']
 
 
 # Application definition
