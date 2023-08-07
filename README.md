@@ -1,9 +1,9 @@
 
 
 # Cafe Soul Website
-![Alt Text](cafepic.png)
+![Alt Text](media/cafepic.png)
 
-![Cafe Soul Logo](https://cafe-booking-4d8e2d880209.herokuapp.com/)
+![Cafe Soul Logo](media/cafesoullogo)
 
 ## Table of Contents
 
