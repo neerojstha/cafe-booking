@@ -50,9 +50,7 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 
 ## Debug
 
-Debugging is an essential part of working with cafe soul. While we strive to create a smooth user experience, issues may arise from time to time. This section provides guidance on how to effectively debug and troubleshoot problems that you might encounter.
-
-If you run into unexpected behavior, error messages, or any other issues, here are a few steps you can take to diagnose and resolve problems:
+Debugging is an essential part of working with cafe soul. While we strive to create a smooth user experience, issues may arise from time to time. following steps were taken to resolve the issues:
 
 - Check Documentation:
 
