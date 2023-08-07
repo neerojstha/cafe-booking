@@ -10,8 +10,6 @@
 - [Description](#description)
 - [Features](#features)
 - [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Django administration login](#admin)
 - [Debug](#debug)
 - [Contributing](#contributing)
@@ -68,6 +66,6 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 ## Credits
 
 
-- This pages html and css codes are inspired from I THINK THERFORE I BLOG project.
-- Photos are received from pexel, unsplash and google images. 
+- This pages html, css, js, python etc codes are inspired from I THINK THERFORE I BLOG project.
+- Photos are received from unsplash and google images. 
 - Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.
