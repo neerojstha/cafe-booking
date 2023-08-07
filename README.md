@@ -58,7 +58,7 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 <hr>
 <ul>
 <li>This pages are deployed in git hub pages and published </li>
-<li> site link : https://neerojstha.github.io/Mantra-Restaurant/index.html</li>
+<li> site link : https://cafe-booking-4d8e2d880209.herokuapp.com/</li>
 </ul>
 
 
