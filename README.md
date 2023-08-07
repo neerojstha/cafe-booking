@@ -12,7 +12,7 @@
 - [Demo](#demo)
 - [Django administration login](#admin)
 - [Debug](#debug)
-- [Contributing](#contributing)
+- [Deployment](#deployment)
 - [Credits](#credits)
 
 ## Description
@@ -48,18 +48,31 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 - password: sanmiguel
 
 
-## Bugs
+## Debug
 
-- Slower to connect with browser</li>
-- Mobile screen compatiblity issues</li>
+Debugging is an essential part of working with cafe soul. While we strive to create a smooth user experience, issues may arise from time to time. This section provides guidance on how to effectively debug and troubleshoot problems that you might encounter.
+
+If you run into unexpected behavior, error messages, or any other issues, here are a few steps you can take to diagnose and resolve problems:
+
+- Check Documentation:
+
+- Inspect Error Messages:
+
+- Review Code:
+
+- Use Debugging Tools:
+
+- Check Dependencies:
+
+- Search Issue Tracker:.
 
 
 
 ## Deployment
 
 
-- This pages are deployed in git hub pages and published </li>
-- site link : https://cafe-booking-4d8e2d880209.herokuapp.com/</li>
+- This pages are deployed in git heroku and published.
+- site link : https://cafe-booking-4d8e2d880209.herokuapp.com/
 
 
 
