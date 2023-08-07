@@ -1,9 +1,15 @@
 
 
 # Cafe Soul Website
+<<<<<<< HEAD
 ![Alt Text](media/cafepic.png)
 
 ![Cafe Soul Logo](media/cafesoullogo)
+=======
+<img src="media/cafepic.png">
+
+![Cafe Soul Logo](media/cafesoulllogo.jpg)
+>>>>>>> a4558ef (readme.md updated)
 
 ## Table of Contents
 
