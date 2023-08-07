@@ -1,7 +1,7 @@
 
 
 # Cafe Soul Website
-<img src="media/cafepic.png>
+![Alt Text](cafepic.png)
 
 ![Cafe Soul Logo](https://cafe-booking-4d8e2d880209.herokuapp.com/)
 
@@ -12,7 +12,7 @@
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Django administration login](#admin)
 - [Debug](#debug)
 - [Contributing](#contributing)
 - [Credits](#credits)
@@ -44,27 +44,30 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 - Django (Python Web Framework)
 - PostgreSQL (Database)
 
+## Django administration login
+
+- username: admin
+- password: sanmiguel
 
 
 ## Bugs
-<br>
-<ul>
-<li>Slower to connect with browser</li>
-<li>Mobile screen compatiblity issues</li>
-</ul>
+
+- Slower to connect with browser</li>
+- Mobile screen compatiblity issues</li>
+
 
 
 ## Deployment
-<hr>
-<ul>
-<li>This pages are deployed in git hub pages and published </li>
-<li> site link : https://cafe-booking-4d8e2d880209.herokuapp.com/</li>
-</ul>
+
+
+- This pages are deployed in git hub pages and published </li>
+- site link : https://cafe-booking-4d8e2d880209.herokuapp.com/</li>
+
 
 
 ## Credits
-<hr>
-<ul>
-<li>This pages html and css codes are inspired from I THINK THERFORE I BLOG project.</li>
-<li>Photos are received from pexel, unsplash and google images. </li>
-<li>Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.</li></ul>
+
+
+- This pages html and css codes are inspired from I THINK THERFORE I BLOG project.
+- Photos are received from pexel, unsplash and google images. 
+- Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.
