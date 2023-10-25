@@ -49,11 +49,7 @@ header {
     background-color: #23BBBB;
 }
 
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
+
 
 .masthead {
     margin-top: 10px;
@@ -293,4 +289,21 @@ header {
     animation-name: ticker;
     -webkit-animation-duration: 40s;
     animation-duration: 40s;
+}
+
+/* Set a fixed width and height for images within the card */
+.card img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* This maintains the image's aspect ratio */
+    max-height: 300px; /* Limit the maximum height, adjust as needed */
+    object-fit: cover; /* This ensures the image fills the container */
+}
+
+/* Style the masthead image */
+.masthead-image img {
+    width: 600px%;
+    height: auto;
+    max-height: 400px; /* Adjust the maximum height for the masthead image */
+    object-fit: 
+    cover;
 }
