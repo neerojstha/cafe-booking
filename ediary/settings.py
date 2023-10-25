@@ -31,7 +31,7 @@ DEBUG = 'DEBUG' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['cafe-booking-4d8e2d880209.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-neerojstha-cafebooking-7yy9um6ak08.ws-eu105.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'ediary.urls'
@@ -96,6 +97,7 @@ WSGI_APPLICATION = 'ediary.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
+
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
