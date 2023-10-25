@@ -41,7 +41,7 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 - Bootstrap 5
 - Django (Python Web Framework)
 - PostgreSQL (Database)
-
+- love
 ## Django administration login
 
 - username: admin
