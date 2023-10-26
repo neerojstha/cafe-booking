@@ -152,16 +152,9 @@ header {
     text-align: center;
 }
 
-.hero-text {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
 
-  .hero-container {
+
+.hero-container {
     position: relative;
 }
 
@@ -169,8 +162,9 @@ header {
 
 .hero-text {
     position: absolute;
-    top: 25%; /* Adjust the percentage to move the text slightly up */
+    top: 35%; /* Adjust the percentage to move the text slightly up */
     left: 50%;
+    text-size-adjust: 150px;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
