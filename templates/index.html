@@ -2,43 +2,18 @@
 
 {% block content %}
 
-<div class="hero-image">
-        <div class="hero-text">
-            <h1 class="welcome-animation">WELCOME TO CAFE SOUL</h1>          
-        </div>
-    </div>
-
-<div class="container text-center">
-  <h3>Coffee</h3>
-  <p><em>We love Coffee!</em></p>
-  <p>Organic roasted coffee prepared with love.</p>
-  
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="coffee-item">
-        <img src="https://t4.ftcdn.net/jpg/01/16/61/93/360_F_116619399_YA611bKNOW35ffK0OiyuaOcjAgXgKBui.jpg" alt="Capaccino">
-        <h4>Capaccino</h4>
+<div class="hero-container">
+  <div class="hero-image">
+      <div class="hero-text">
+          <h1 class="welcome-animation">WELCOME TO CAFE SOUL</h1>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="coffee-item">
-        <img src="https://img.freepik.com/premium-photo/heart-steam-hovering-red-coffee-cup-coffee-wooden-table-with-cream-wall_158502-206.jpg" alt="Americano">
-        <h4>Americano</h4>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="coffee-item">
-        <img src="https://media.istockphoto.com/id/508347326/photo/happy-coffee-cup.jpg?s=612x612&w=0&k=20&c=VddFWLomZ_Wv_vvX7-nVsSD9Zze5CXFt6mKGgU7R10c=" alt="Flat white">
-        <h4>Flat white</h4>
-      </div>
-    </div>
   </div>
 </div>
 
 <div class="container-fluid">
   <div class="row">
 
-      <!-- Blog Entries Column -->
+
       <div class="col-12 mt-3 left">
           <div class="row">
               {% for post in post_list %}

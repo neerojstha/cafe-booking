@@ -154,12 +154,44 @@ header {
 
 .hero-text {
     position: absolute;
-    top: 75%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
   }
+
+  .hero-container {
+    position: relative;
+}
+
+
+
+.hero-text {
+    position: absolute;
+    top: 25%; /* Adjust the percentage to move the text slightly up */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.welcome-animation {
+    animation: moveText 5s infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -40%); /* Adjust the vertical position for the animation */
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
 .container {
     padding: 20px;
   }
@@ -194,6 +226,7 @@ header {
     height: 75%; /* Adjust the height as needed */
     width: 125px; /* Preserve the aspect ratio */
     margin-right: 10px; /* Add some spacing to the right */
+    margin-top: auto;
 }
 
 /* CSS animation keyframes for fade-in effect */
@@ -304,6 +337,5 @@ header {
     width: 600px%;
     height: auto;
     max-height: 400px; /* Adjust the maximum height for the masthead image */
-    object-fit: 
-    cover;
+    object-fit: cover;
 }
