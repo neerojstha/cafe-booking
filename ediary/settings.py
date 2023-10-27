@@ -32,7 +32,7 @@ DEBUG = 'DEBUG' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['cafe-booking-4d8e2d880209.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-neerojstha-cafebooking-7yy9um6ak08.ws-eu105.gitpod.io', 'localhost']
 
 
 # Application definition
