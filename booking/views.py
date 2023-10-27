@@ -1,7 +1,10 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
-from .models import Post, Booking, Menu
+from .models import Post, Menu
 from .forms import BookingForm
+from .models import Booking
+from django.contrib.auth.decorators import login_required
+
 
 class PostList(generic.ListView):
     model = Post
@@ -22,15 +25,38 @@ class PostDetail(View):
             },
         )
 
-def booking(request):
+def create_booking(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')  #
+            return redirect('booking_list')
     else:
         form = BookingForm()
-    return render(request, 'booking.html', {'form': form})
+    return render(request, 'create_booking.html', {'form': form})
+
+@login_required
+def booking_list(request):
+    bookings = Booking.objects.filter(canceled=False)
+    return render(request, 'booking_list.html', {'bookings': bookings})
+
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, pk=booking_id)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('booking_list')
+    else:
+        form = BookingForm(instance=booking)
+    return render(request, 'booking_edit.html', {'form': form, 'booking': booking})
+
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, pk=booking_id)
+    if request.method == 'POST':
+        booking.cancel_booking()
+        return redirect('booking_list')
+    return render(request, 'booking_confirm_delete.html', {'booking': booking})
 
 def menu(request):
     items = Menu.objects.all()
