@@ -4,6 +4,7 @@ from .models import Post, Menu
 from .forms import BookingForm
 from .models import Booking
 from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 
 
 class PostList(generic.ListView):
@@ -37,9 +38,22 @@ def create_booking(request):
 
 @login_required
 def booking_list(request):
-    bookings = Booking.objects.filter(canceled=False)
+    if request.user.is_staff:
+        # If the user is a superuser, display all bookings
+        bookings = Booking.objects.filter(canceled=False)
+    else:
+        # For regular users, display their own bookings
+        bookings = Booking.objects.filter(email=request.user.email, canceled=False)
+
     return render(request, 'booking_list.html', {'bookings': bookings})
 
+# The view for superusers to see all bookings
+@staff_member_required
+def superuser_booking_list(request):
+    bookings = Booking.objects.filter(canceled=False)
+    return render(request, 'superuser_booking_list.html', {'bookings': bookings})
+
+@login_required
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
@@ -51,6 +65,7 @@ def edit_booking(request, booking_id):
         form = BookingForm(instance=booking)
     return render(request, 'booking_edit.html', {'form': form, 'booking': booking})
 
+@login_required
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':

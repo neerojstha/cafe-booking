@@ -250,7 +250,7 @@ header {
 /* Apply animation and styles to the "Welcome to Cafe Soul" words */
 .welcome-animation {
     animation: fade-in 2s ease-in-out; /* Adjust the duration and timing function as needed */
-    color: #eb0fa2; /* Change this color to a coffee color you prefer */
+    color: white; /* Change this color to a coffee color you prefer */
     font-size: 32px; /* Adjust the font size as needed */
 }
 
