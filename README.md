@@ -118,7 +118,7 @@ Light house test performance, accessiblity, best practices and SEO.
 
 ## Debug
 
-Debugging is an essential part of working with Cafe Soul. While we strive to create a smooth user experience, issues may arise from time to time. If you encounter any problems or need to troubleshoot specific aspects of the project, here are some steps you can take to diagnose and resolve issues:
+Debugging is an essential part of working with Cafe Soul. While we strive to create a smooth user experience, issues may arise from time to time. here are some steps took  diagnose and resolve issues:
 
 1. **Check Documentation**: Refer to the project's documentation or user guide for information on how to use and configure different features of Cafe Soul.
 
