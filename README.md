@@ -77,6 +77,11 @@ used w3 validator to check error and No error or warning shows.
 Used w3 jigsaw css checker and passed without error.
 ![Alt Text](media/cssvalidation.png)
 
+- Lighthouse Test
+Light house test performance, accessiblity, best practices and SEO.
+![Alt Text](media/lighthouse.jpg)
+
+
 - Testing Process
 
     During the development of Cafe Soul Website, I paid close attention to the quality of the site. The testing process involved the following steps:
