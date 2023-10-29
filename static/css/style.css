@@ -232,6 +232,13 @@ header {
 }
 
 
+.alert-success {
+    color: white; /* Set the text color to white */
+    background-color: #28a745; /* Change the background color for success messages */
+    /* Add any additional styles you need */
+}
+
+
 
     /* Add margin-top to the content to push it down */
 .content {
