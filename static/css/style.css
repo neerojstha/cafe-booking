@@ -3,6 +3,7 @@ body {
 }
 header {
     padding: 25px;
+    margin-top: 250px;
 }
 .brand {
     font-family: Lato, sans-serif;
